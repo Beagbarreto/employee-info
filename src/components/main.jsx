@@ -5,14 +5,15 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Form from '../EmployeeForm/form';
-import List from '../EmployeeList/list';
+import Form from './EmployeeForm/form';
+import List from './EmployeeList/list';
 
 const Main = () => {
 
     return (
+      <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
+          <h1>Employee App</h1>
           <ul className="header">
             <li><a href="/">Home</a></li>
             <li><a href="/stuff">Form</a></li>
@@ -22,6 +23,7 @@ const Main = () => {
              
           </div>
         </div>
+        </HashRouter>
     );
 }
  
