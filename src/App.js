@@ -1,13 +1,11 @@
+import logo from './logo.svg';
 import './App.css';
-import List from './components/EmployeeList/list';
-import Form from './components/EmployeeForm/form';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <List />
-        < Form />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
