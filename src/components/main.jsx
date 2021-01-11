@@ -29,8 +29,8 @@ const Main = () => {
               <NavLink to="/list"><a class="waves-effect waves-light btn">List</a></NavLink>
             </div>
           </div>
-          <div class="col s9">
-            <div className="Content-centered">
+          <div class="col s9" className="Content-centered">
+            <div >
               <Route exact path="/" component={Form}/>
               <Route path="/list" component={List}/>
             </div>
