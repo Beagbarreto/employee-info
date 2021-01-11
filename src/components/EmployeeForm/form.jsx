@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import 'materialize-css'; 
+import 'materialize-css/dist/css/materialize.min.css';
 
 function Form() {
 const [employeeData, setEmployeeData] = useState('');
