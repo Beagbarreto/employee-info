@@ -14,10 +14,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Tech Stack
 
-react-create-app
-react hooks
-react-router-dom
-materialize
+-react-create-app
+-react hooks
+-react-router-dom
+-materialize
 
 ## Learn More
 
