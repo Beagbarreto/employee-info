@@ -1,31 +1,44 @@
-//import React, { Component } from "react";
 import React from 'react';
 import {
   Route,
   NavLink,
   HashRouter
 } from "react-router-dom";
+import 'materialize-css'; 
+import 'materialize-css/dist/css/materialize.min.css';
+import '../App.css';
 import Form from './EmployeeForm/form';
 import List from './EmployeeList/list';
 
 const Main = () => {
 
-    return (
-<HashRouter>
-<div>
-  <h1>Employee App</h1>
-  <ul className="header">
-    <li><NavLink to="/">Form</NavLink></li>
-    <li><NavLink to="/list">List</NavLink></li>
-  </ul>
-  <div className="content">
-    <Route exact path="/" component={Form}/>
-    <Route path="/list" component={List}/>
-  </div>
-</div>
-</HashRouter>
-
-    );
+  return (
+    <HashRouter>
+      <div>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Employee App</a>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col s3" >
+            <div class="row" className="Button-margin">
+              <NavLink to="/"><a class="waves-effect waves-light btn">Form</a></NavLink>
+            </div>
+            <div class="row" className="Button-margin">
+              <NavLink to="/list"><a class="waves-effect waves-light btn">List</a></NavLink>
+            </div>
+          </div>
+          <div class="col s9">
+            <div className="Content-centered">
+              <Route exact path="/" component={Form}/>
+              <Route path="/list" component={List}/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </HashRouter>
+  );
 }
  
 export default Main;

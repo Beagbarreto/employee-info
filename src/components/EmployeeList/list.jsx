@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
- 
+import 'materialize-css'; 
+import 'materialize-css/dist/css/materialize.min.css';
+
 function List() {
 const [employees, setEmployees] = useState([
 {name: 'Roger Vormittog', address: '11 Jackson Av, Scarsdale, NY', id: 1},
