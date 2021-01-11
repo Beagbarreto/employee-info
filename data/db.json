@@ -1,0 +1,37 @@
+{
+  "employees": [
+    {
+      "name": "Roger Vormittog",
+      "email": "rogvor@somemail.com",
+      "birthdate": "08/10/1970",
+      "address": "11 Jackson Av, Scarsdale, NY",
+      "id": 1
+    },
+    {
+      "name": "Ted Chang",
+      "email": "tech-ted@somemail.com",
+      "birthdate": "21/11/1964",
+      "address": "11 Jackson Av, Scarsdale, NY",
+      "id": 2
+    },
+    {
+      "name": "Lauren Stwart",
+      "email": "misslauren@somemail.com",
+      "birthdate": "08/10/1970",
+      "address": " Winter Hill Rd, Tuckahoe, NY",
+      "id": 3
+    },    {
+      "name": "Giselle knowles",
+      "email": "beyoncemyneighbor@somemail.com",
+      "birthdate": "04/09/1981",
+      "address": "15 Heathcote Road, Scarsdale, NY",
+      "id": 4
+    },    {
+      "name": "Tom Blatt",
+      "email": "blattbk@somemail.com",
+      "birthdate": "08/10/1959",
+      "address": "100 Main St, White Plains, NY",
+      "id": 5
+    },
+  ]
+}
