@@ -7,7 +7,7 @@ import {
 import 'materialize-css'; 
 import 'materialize-css/dist/css/materialize.min.css';
 import '../App.css';
-import Form from './EmployeeForm/form';
+import Form from './form';
 import List from './EmployeeList/list';
 
 const Main = () => {

@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import '../App.css';
 import 'materialize-css'; 
 import 'materialize-css/dist/css/materialize.min.css';
 
 function Form() {
-const [employeeData, setEmployeeData] = useState('');
+  const [employeeData, setEmployeeData] = useState({
+    name: '', email: '', birthdate: '', address: '',
+  });
+
+  const onClick = () => {
+    console.log('Button has been clicked')
+    // setEmployeeData('');
+  }
+
+  // useEffect(() => {
+  //   setEmployeeData(employeeData);
+  // }, []);
 
   return (
     <div>
@@ -39,6 +51,7 @@ const [employeeData, setEmployeeData] = useState('');
               <span class="helper-text" data-error="wrong" data-success="right"/>
             </div>
           </div>
+          <a class="waves-effect waves-light btn" type="submit" onClick={onClick}>Submit</a>
         </form>
       </div>
     </div> 
