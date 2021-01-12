@@ -1,4 +1,3 @@
-//import React, { Component } from "react";
 import React from 'react';
 import {
   Route,
@@ -7,6 +6,7 @@ import {
 } from "react-router-dom";
 import 'materialize-css'; 
 import 'materialize-css/dist/css/materialize.min.css';
+import '../App.css';
 import Form from './EmployeeForm/form';
 import List from './EmployeeList/list';
 
@@ -21,16 +21,16 @@ const Main = () => {
           </div>
         </nav>
         <div class="row">
-          <div class="col s3">
-            <div class="row">
+          <div class="col s3" >
+            <div class="row" className="Button-margin">
               <NavLink to="/"><a class="waves-effect waves-light btn">Form</a></NavLink>
             </div>
-            <div class="row">
+            <div class="row" className="Button-margin">
               <NavLink to="/list"><a class="waves-effect waves-light btn">List</a></NavLink>
             </div>
           </div>
-          <div class="col s9">
-            <div className="content">
+          <div class="col s9" className="Content-centered">
+            <div >
               <Route exact path="/" component={Form}/>
               <Route path="/list" component={List}/>
             </div>
